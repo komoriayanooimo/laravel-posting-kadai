@@ -19,7 +19,7 @@ class PostController extends Controller
     // viewヘルパー　ヘルパー（助っ人）Larevelにおいて好きな場所から便利に呼び出せる関数のこと。（ヘルパー関数）
     public function index() {
         // postsテーブルの全データを新しい順で取得する
-        $posts = Post::latest()->get();
+        $posts = Post::oldest()->get();
         // 変数$postをposts/index.blade.phpに渡す
         return view('posts.index', compact('posts')); // 表示したいビューを引数として指定する。resources/view/posts/index.blade.php →　view('posts.index')
     }
