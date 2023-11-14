@@ -38,8 +38,3 @@
      </div>
  
  </form>
-
-<!-- /products/:idにPUTでリクエストを送ることでデータを更新できます。-->
-<!-- action="{{ route('products.update',$product->id) }}"でリクエストの送信先を指定してい -->
-<!-- value="{{ $product->name }}"のように初期値に既存の商品のデータを使用している -->
-<!-- selected　登録済みの商品のカテゴリ名を表示することができてい　-->

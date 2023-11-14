@@ -26,11 +26,3 @@
      </tr>
      @endforeach
  </table>
-
-<!-- routeヘルパーを使うことで、リンク先のURLを自動的に作成 route('products.create')と記述すれば、/products/createへのリンクを作成--> 
-<!-- BladeではPHPのコードを{{と}}で囲むことで変数の中身をそのまま表示できる -->
-<!-- @foreach〜@endforeachの繰り返し処理を行うことで、短いコードで複数の商品を表示することが可能 -->
-
-<!-- <form>タグを使って、削除リクエストを送信するフォームを作成 -->
-<!-- /products/:idにDELETEリクエストを送ることでデータを削除できる -->
-<!-- action="{{ route('products.destroy',$product->id) }}"でリクエストの送信先を指定--> 

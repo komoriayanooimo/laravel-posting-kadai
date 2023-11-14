@@ -19,5 +19,3 @@
      <strong>Price:</strong>
      {{$product->price}} 
  </div>
-
-  <!-- {{$product->name}} $product変数に保存されている商品の名前などを、ビューで表示している。 -->

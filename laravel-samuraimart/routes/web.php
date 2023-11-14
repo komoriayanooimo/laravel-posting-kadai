@@ -18,8 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('products', ProductController::class); 
-//リソースコントローラーという特殊なコントローラーを作成し、そのルートを登録するためのメソッド
-// リソースコントローラーとはデータベースへのCRUD操作を行うために必要なメソッドが定義されているコントローラー
-// Route::resource CRUD用のURLを一度に定義
+Route::resource('products', ProductController::class)->middleware(['auth', 'verified']);
+Auth::routes(['verify' => true]);
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
